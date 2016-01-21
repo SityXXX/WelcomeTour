@@ -1,0 +1,55 @@
+.btn {
+
+  &--imaged {
+
+    position: relative;
+    overflow: hidden;
+    padding-left: 50px;
+    text-transform: uppercase;
+
+    &::before {
+
+      content: '';
+      display: block;
+      width: 60px;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-image: linear-gradient(-250deg, #ee5b15, #ee5b15 70%, transparent 70%);
+
+    }
+
+    &::after {
+
+      content: '\e080';
+      font-family: 'Glyphicons Halflings';
+      font-style: normal;
+      font-weight: normal;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      margin-top: -7px;
+
+    }
+
+    &:active {
+
+      &:hover {
+
+        &:before {
+
+          background: none;
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

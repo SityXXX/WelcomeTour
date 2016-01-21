@@ -1,0 +1,29 @@
+.worktime {
+
+  text-align: right;
+
+  &__wrap {
+
+    display: inline-block;
+    color: #ffffff;
+    font-size: 13px;
+    padding-left: 34px;
+    background: url('../images/clock@1x.png') 0 50% no-repeat;
+    background-size: 23px auto;
+    line-height: 23px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+      background-image: url('../images/clock@2x.png');
+
+    }
+
+    .svg & {
+
+      background-image: url('../images/clock.svg');
+
+    }
+
+  }
+
+}

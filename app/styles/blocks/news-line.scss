@@ -1,0 +1,39 @@
+.news-line {
+
+  background-color: #f3f3f3;
+  padding: 5px 10px 5px 5px;
+  position: relative;
+  margin-bottom: 20px;
+
+  &:last-child {
+
+    margin-bottom: 0;
+
+  }
+
+  &__heading {
+
+    margin: 0 0 10px 0;
+
+    a {
+
+      color: #1a6992;
+
+    }
+
+  }
+
+  &__image-wrap {
+
+    float: left;
+    margin-right: 10px;
+
+  }
+
+  &__more {
+
+    text-align: right;
+
+  }
+
+}

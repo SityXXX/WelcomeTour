@@ -1,0 +1,163 @@
+.tour {
+
+  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  @media (max-width: $screen-xs-max) {
+
+    margin-bottom: 20px;
+
+  }
+
+  &__img-wrap {
+
+    position: relative;
+
+  }
+
+  &__img {
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+  }
+
+  &__info {
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(41,199,224,0.64);
+    padding: 10px 15px;
+    color: #ffffff;
+
+    [class^='col-']:first-child {
+
+      border-right: 1px solid #ffffff;
+
+    }
+
+  }
+
+  &__comfort {
+
+    font-family: $font-medium;
+    font-size: 17px;
+    margin-bottom: 5px;
+
+  }
+
+  &__details {
+
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+  }
+
+  &__food, &__duration {
+
+    font-size: 17px;
+    font-family: $font-medium;
+
+  }
+
+  &__healing, &__date {
+
+    font-size: 15px;
+    font-family: $font-light;
+
+  }
+
+  &__name {
+
+    margin: 0;
+    font-size: 18px;
+
+    a {
+
+      color: #1a6992;
+      font-family: $font-medium;
+
+    }
+
+  }
+
+  &__location {
+
+    text-align: right;
+
+    a {
+
+      display: inline-block;
+      color: #767676;
+      padding-left: 17px;
+      background: url('../images/map@1x.png') 0 50% no-repeat;
+      background-size: 13px 17px;
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+        background-image: url('../images/map@2x.png');
+
+      }
+
+      .svg & {
+
+        background-image: url('../images/map.svg');
+
+      }
+
+    }
+
+  }
+
+  &__details-top-side {
+
+    border-bottom: 1px dotted #767676;
+    margin-bottom: 10px;
+
+  }
+
+  &__stars {
+
+    font-size: 0;
+
+  }
+
+  &__prestige {
+
+    color: #ffd200;
+
+  }
+
+  &__price-wrap {
+
+    font-family: $font-medium;
+
+  }
+
+  &__price-for {
+
+    font-size: 12px;
+    line-height: 44px;
+    text-transform: uppercase;
+
+  }
+
+  &__price {
+
+    font-size: 30px;
+    text-align: right;
+
+  }
+
+  &__price-currency {
+
+    font-size: 15px;
+    font-family: $font-light;
+
+  }
+
+}

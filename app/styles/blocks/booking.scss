@@ -1,0 +1,92 @@
+.booking {
+
+  &__heading {
+
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 30px;
+
+    @media (max-width: $screen-sm-max) {
+
+      font-size: 32px;
+
+    }
+
+  }
+
+  &__top-side {
+
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 20px 20px 10px;
+    background-color: rgba(9, 80, 113, 0.5);
+
+  }
+
+  &__bottom-side {
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 15px 20px 10px;
+    background-color: #ececec;
+
+    label {
+
+      color: $gray-darker;
+
+    }
+
+  }
+
+  label {
+
+    @media (max-width: $screen-sm-min) {
+
+      font-size: 13px;
+
+    }
+
+  }
+
+  .btn {
+
+    @media (max-width: $screen-xs-max) {
+
+      margin-top: 26px;
+
+    }
+
+    @media (max-width: $screen-sm-min) {
+
+      font-size: 13px;
+
+    }
+
+  }
+
+  .form-group {
+
+    @media (min-width: $screen-md-min) {
+
+      //margin-bottom: 0;
+
+    }
+
+  }
+
+  [class^='col-'] {
+
+    padding-left: 4px;
+    padding-right: 4px;
+
+  }
+
+  .row {
+
+    margin-left: -4px;
+    margin-right: -4px;
+
+  }
+
+}

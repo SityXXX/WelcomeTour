@@ -1,0 +1,22 @@
+.logo {
+
+  display: block;
+  width: 296px;
+  height: 53px;
+  font-size: 0;
+  background: url('../images/WelcomeTourLogo@1x.png') 0 0 no-repeat;
+  background-size: 296px auto;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+    background-image: url('../images/WelcomeTourLogo@2x.png');
+
+  }
+
+  .svg & {
+
+    background-image: url('../images/WelcomeTourLogo.svg');
+
+  }
+
+}

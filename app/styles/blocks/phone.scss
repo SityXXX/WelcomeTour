@@ -1,0 +1,30 @@
+.phone {
+
+  text-align: right;
+
+  &__wrap {
+
+    display: inline-block;
+    padding-left: 29px;
+    margin-bottom: 2px;
+    color: #fff;
+    font-family: $font-medium;
+    font-size: 26px;
+    background: url('../images/phone@1x.png') 0 50% no-repeat;
+    background-size: 20px auto;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+      background-image: url('../images/phone@2x.png');
+
+    }
+
+    .svg & {
+
+      background-image: url('../images/phone.svg');
+
+    }
+
+  }
+
+}

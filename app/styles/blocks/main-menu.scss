@@ -1,0 +1,611 @@
+.main-menu {
+
+  @media (max-width: $screen-xs-max) {
+
+    display: none;
+
+  }
+
+  &__list {
+
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: table;
+    width: 100%;
+
+  }
+
+  &__item {
+
+    display: table-cell;
+    text-align: center;
+
+  }
+
+  &__link {
+
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 43px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    height: 43px;
+    text-shadow: 1px 1px 1px rgba(26, 47, 126, 0.75);
+    padding-left: 30px;
+    text-decoration: none;
+
+    &::before {
+
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -13px;
+      height: 25px;
+      width: 26px;
+      background-image: url('../images/menu-sprite.png');
+      background-repeat: no-repeat;
+
+    }
+
+    &::after {
+
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+
+    }
+
+    &:focus {
+
+      text-decoration: none;
+      color: #ffffff;
+      outline: none;
+
+    }
+
+    &:hover {
+
+      color: #35cae2;
+      text-decoration: none;
+
+      &:focus {
+
+        color: #35cae2;
+
+      }
+
+      &::after {
+
+        background-color: #35cae2;
+
+      }
+
+    }
+
+    @media (max-width: $screen-sm-max) {
+
+      font-size: 13px;
+
+    }
+
+  }
+
+  &__link-home {
+
+    &::before {
+
+      background-position: 0 0;
+
+    }
+
+    &:hover {
+
+      &::before {
+
+        background-position: -26px 0;
+
+      }
+
+    }
+
+    &--active {
+
+      color: #fc8929;
+
+      &::before {
+
+        background-position: -52px 0;
+
+      }
+
+      &::after {
+
+        background-color: #fc8929;
+
+      }
+
+      &:hover {
+
+        color: #fc8929;
+
+        &::before {
+
+          background-position: -52px 0;
+
+        }
+
+        &::after {
+
+          background-color: #fc8929;
+
+        }
+
+      }
+
+      &:focus {
+
+        color: #fc8929;
+
+      }
+
+    }
+
+  }
+
+
+
+  &__link-city {
+
+    &::before {
+
+      background-position: 0 -25px;
+
+    }
+
+    &:hover {
+
+      &::before {
+
+        background-position: -26px -25px;
+
+      }
+
+    }
+
+    &--active {
+
+      color: #fc8929;
+
+      &::before {
+
+        background-position: -52px -25px;
+
+      }
+
+      &::after {
+
+        background-color: #fc8929;
+
+      }
+
+      &:hover {
+
+        color: #fc8929;
+
+        &::before {
+
+          background-position: -52px -25px;
+
+        }
+
+        &::after {
+
+          background-color: #fc8929;
+
+        }
+
+      }
+
+      &:focus {
+
+        color: #fc8929;
+
+      }
+
+    }
+
+  }
+
+
+
+  &__link-sanatory {
+
+    &::before {
+
+      background-position: 0 -50px;
+
+    }
+
+    &:hover {
+
+      &::before {
+
+        background-position: -26px -50px;
+
+      }
+
+    }
+
+    &--active {
+
+      color: #fc8929;
+
+      &::before {
+
+        background-position: -52px -50px;
+
+      }
+
+      &::after {
+
+        background-color: #fc8929;
+
+      }
+
+      &:hover {
+
+        color: #fc8929;
+
+        &::before {
+
+          background-position: -52px -50px;
+
+        }
+
+        &::after {
+
+          background-color: #fc8929;
+
+        }
+
+      }
+
+      &:focus {
+
+        color: #fc8929;
+
+      }
+
+    }
+
+  }
+
+
+
+  &__link-medic {
+
+    &::before {
+
+      background-position: 0 -75px;
+
+    }
+
+    &:hover {
+
+      &::before {
+
+        background-position: -26px -75px;
+
+      }
+
+    }
+
+    &--active {
+
+      color: #fc8929;
+
+      &::before {
+
+        background-position: -52px -75px;
+
+      }
+
+      &::after {
+
+        background-color: #fc8929;
+
+      }
+
+      &:hover {
+
+        color: #fc8929;
+
+        &::before {
+
+          background-position: -52px -75px;
+
+        }
+
+        &::after {
+
+          background-color: #fc8929;
+
+        }
+
+      }
+
+      &:focus {
+
+        color: #fc8929;
+
+      }
+
+    }
+
+  }
+
+
+
+  &__link-children {
+
+    &::before {
+
+      background-position: 0 -100px;
+
+    }
+
+    &:hover {
+
+      &::before {
+
+        background-position: -26px -100px;
+
+      }
+
+    }
+
+    &--active {
+
+      color: #fc8929;
+
+      &::before {
+
+        background-position: -52px -100px;
+
+      }
+
+      &::after {
+
+        background-color: #fc8929;
+
+      }
+
+      &:hover {
+
+        color: #fc8929;
+
+        &::before {
+
+          background-position: -52px -100px;
+
+        }
+
+        &::after {
+
+          background-color: #fc8929;
+
+        }
+
+      }
+
+      &:focus {
+
+        color: #fc8929;
+
+      }
+
+    }
+
+  }
+
+
+
+  &__link-price {
+
+    &::before {
+
+      background-position: 0 -125px;
+
+    }
+
+    &:hover {
+
+      &::before {
+
+        background-position: -26px -125px;
+
+      }
+
+    }
+
+    &--active {
+
+      color: #fc8929;
+
+      &::before {
+
+        background-position: -52px -125px;
+
+      }
+
+      &::after {
+
+        background-color: #fc8929;
+
+      }
+
+      &:hover {
+
+        color: #fc8929;
+
+        &::before {
+
+          background-position: -52px -125px;
+
+        }
+
+        &::after {
+
+          background-color: #fc8929;
+
+        }
+
+      }
+
+      &:focus {
+
+        color: #fc8929;
+
+      }
+
+    }
+
+  }
+
+
+
+  &__link-map {
+
+    &::before {
+
+      background-position: 0 -150px;
+
+    }
+
+    &:hover {
+
+      &::before {
+
+        background-position: -26px -150px;
+
+      }
+
+    }
+
+    &--active {
+
+      color: #fc8929;
+
+      &::before {
+
+        background-position: -52px -150px;
+
+      }
+
+      &::after {
+
+        background-color: #fc8929;
+
+      }
+
+      &:hover {
+
+        color: #fc8929;
+
+        &::before {
+
+          background-position: -52px -150px;
+
+        }
+
+        &::after {
+
+          background-color: #fc8929;
+
+        }
+
+      }
+
+      &:focus {
+
+        color: #fc8929;
+
+      }
+
+    }
+
+  }
+
+
+
+  &__link-contacts {
+
+    &::before {
+
+      background-position: 0 -175px;
+
+    }
+
+    &:hover {
+
+      &::before {
+
+        background-position: -26px -175px;
+
+      }
+
+    }
+
+    &--active {
+
+      color: #fc8929;
+
+      &::before {
+
+        background-position: -52px -175px;
+
+      }
+
+      &::after {
+
+        background-color: #fc8929;
+
+      }
+
+      &:hover {
+
+        color: #fc8929;
+
+        &::before {
+
+          background-position: -52px -175px;
+
+        }
+
+        &::after {
+
+          background-color: #fc8929;
+
+        }
+
+      }
+
+      &:focus {
+
+        color: #fc8929;
+
+      }
+
+    }
+
+  }
+
+}

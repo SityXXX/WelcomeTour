@@ -1,0 +1,51 @@
+.search {
+
+  position: relative;
+  border: 3px solid rgba(9,69,103,0.42);
+  border-radius: 5px;
+
+  &::after {
+
+    content: '';
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    margin-top: -12px;
+    background: url('../images/magnifier@1x.png') 0 0 no-repeat;
+    background-size: 23px 23px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+      background-image: url('../images/magnifier@2x.png');
+
+    }
+
+    .svg & {
+
+      background-image: url('../images/magnifier.svg');
+
+    }
+
+  }
+
+  &__field {
+
+    box-shadow: inset 3px 4px 3px rgba(0, 0, 0, 0.36);
+    border: 1px solid #0e4463;
+    padding-right: 60px;
+    height: 41px;
+
+    &:focus {
+
+      outline: none;
+      border: 1px solid #0e4463;
+      box-shadow: none;
+
+    }
+
+  }
+
+}

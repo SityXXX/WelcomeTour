@@ -1,0 +1,140 @@
+.page-section {
+
+  &--hot-tours {
+
+    background: url('../images/hot-tours-bg@1x.jpg') 0 0 no-repeat;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+      background-image: url('../images/hot-tours-bg@2x.jpg');
+
+    }
+
+  }
+
+  &--thematic {
+
+    background-color: #f7f4f4;
+
+  }
+
+  &--steps {
+
+    padding: 90px 80px;
+    background: url('../images/dash-bg-sky@1x.png') 0 50% repeat-x;
+    background-size: 13px 3px;
+
+    @media (max-width: $screen-sm-max) {
+
+      background: url('../images/dash-bg-sky-vertical@1x.png') 50% 0 repeat-y;
+      background-size: 3px 13px;
+
+    }
+
+
+  }
+
+  &__hot-tours {
+
+    overflow: hidden;
+
+  }
+
+  &__top-dash {
+
+    background: url('../images/dash-bg-white@1x.png') 0 0 repeat-x;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+      background-image: url('../images/dash-bg-white@2x.png');
+
+    }
+
+  }
+
+  &__bottom-dash {
+
+    background: url('../images/dash-bg-white@1x.png') 0 100% repeat-x;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+      background-image: url('../images/dash-bg-white@2x.png');
+
+    }
+
+  }
+
+  &__wrap {
+
+    padding: 50px 0 50px;
+
+  }
+
+  &__header {
+
+    margin: 0 auto 50px auto;
+    max-width: 50%;
+    text-align: center;
+
+    &--light {
+
+      color: #ffffff;
+
+    }
+
+    @media (max-width: $screen-xs-max) {
+      max-width: 100%;
+
+    }
+
+  }
+
+  &__heading {
+
+    margin-top: 0;
+    font-size: 40px;
+    text-transform: uppercase;
+
+    @media (max-width: $screen-sm-max) {
+
+      font-size: 32px;
+
+    }
+
+
+
+    &::after {
+
+      content: '';
+      display: block;
+      height: 1px;
+      background-color: #fc8929;
+      width: 20%;
+      margin: 10px auto 0 auto;
+
+      @media (max-width: $screen-xs-max) {
+
+        width: 40%;
+
+      }
+
+
+    }
+
+  }
+
+  &__small {
+
+    font-size: 18px;
+    color: #8b8b8b;
+
+    &--light {
+
+      color: #ffffff;
+
+    }
+
+  }
+
+}

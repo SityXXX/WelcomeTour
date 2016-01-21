@@ -1,0 +1,72 @@
+.thematic-tour {
+
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+
+  @media (max-width: $screen-sm-max) {
+
+    position: static;
+
+  }
+
+  &__img {
+
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+  }
+
+  &__wrap {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    height: 100%;
+
+    @media (max-width: $screen-sm-max) {
+
+      position: static;
+      padding: 0;
+
+    }
+
+  }
+
+  &__wrap-inner {
+
+    background-color: rgba(22,99,144,0.75);
+    height: 100%;
+    padding: 20px 15%;
+
+    @media (max-width: $screen-sm-max) {
+
+      padding: 20px 5%;
+
+    }
+
+  }
+
+  &__heading {
+
+    color: #ffffff;
+    font-size: 30px;
+    margin: 0 0 10px 0;
+
+  }
+
+  &__text {
+
+    margin: 0 0 20px 0;
+    color: #ffffff;
+
+  }
+
+  .btn {
+
+    width: auto;
+
+  }
+
+}

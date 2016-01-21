@@ -1,0 +1,572 @@
+<!doctype html>
+<html class="no-js" lang="ua">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WelcomeTour</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/bootstrap-select/dist/css/bootstrap-select.css" />
+    <!-- endbower -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
+    <script src="/bower_components/jquery.inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
+    <!-- endbower -->
+  </head>
+  <body>
+
+  <!-- Header -->
+  <header class="page-header">
+
+    <div class="page-header__top-row">
+      <div class="container">
+
+        <div class="language">
+          <div class="language__wrap">
+            <select class="language-dropdown" name="language" id="language">
+              <option value="ua">UA</option>
+              <option value="ru">RUS</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="page-header__header-info">
+          <div class="row">
+            <div class="col-sm-12">
+
+              <a href="#" class="logo">WelcomeTour</a>
+
+            </div>
+            <div class="col-sm-12">
+
+              <div class="phone"><div class="phone__wrap">+38 (067) 477-44-53</div></div>
+              <div class="worktime"><div class="worktime__wrap">пн - пт: з 9<sup>00</sup> до 18<sup>00</sup>, сб: з 10<sup>00</sup> до 13<sup>00</sup></div></div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-24">
+            <form action="/" enctype="application/x-www-form-urlencoded">
+
+              <div class="form-group">
+                <div class="search">
+                  <input type="text" name="search" class="form-control search__field" placeholder="Поиск">
+                </div>
+              </div>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="page-header__middle-row">
+      <div class="container">
+        <nav class="main-menu">
+          <ul class="main-menu__list">
+            <li class="main-menu__item"><a href="#" class="main-menu__link main-menu__link-home main-menu__link-home--active">Головна</a></li>
+            <li class="main-menu__item"><a href="#" class="main-menu__link main-menu__link-city">Трускавець</a></li>
+            <li class="main-menu__item"><a href="#" class="main-menu__link main-menu__link-sanatory">Санаторії</a></li>
+            <li class="main-menu__item"><a href="#" class="main-menu__link main-menu__link-medic">Лікування</a></li>
+            <li class="main-menu__item"><a href="#" class="main-menu__link main-menu__link-children">Діти</a></li>
+            <li class="main-menu__item"><a href="#" class="main-menu__link main-menu__link-price">Ціни</a></li>
+            <li class="main-menu__item"><a href="#" class="main-menu__link main-menu__link-map">Карта</a></li>
+            <li class="main-menu__item"><a href="#" class="main-menu__link main-menu__link-contacts">Контакти</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="page-header__bottom-row">
+      <div class="container">
+        <div class="booking">
+          <div class="booking__heading">Оберіть найкращий відпочинок в Трускавці</div>
+          <div class="booking__panel">
+            <form action="/" enctype="application/x-www-form-urlencoded">
+              <div class="booking__top-side">
+                <div class="row">
+                  <div class="col-sm-12 col-md-5">
+                    <div class="form-group">
+                      <label for="residence">Проживання:</label>
+                      <input type="text" class="form-control" id="residence" placeholder="Оберіть проживання">
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-md-5">
+                    <div class="form-group">
+                      <label for="room">Номер:</label>
+                      <input type="text" class="form-control" id="room" placeholder="Оберіть номер">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="form-group">
+                      <label for="arrive_date">Дата заїзду:</label>
+                      <input type="text" class="form-control" id="arrive_date" placeholder="Дата заїзду">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="form-group">
+                      <label for="leave_date">Дата виїзду:</label>
+                      <input type="text" class="form-control" id="leave_date" placeholder="Дата виїзду">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="form-group">
+                      <label for="adults">Дорослих:</label>
+                      <input type="text" class="form-control" id="adults" placeholder="К-сть дорослих">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="form-group">
+                      <label for="children">Дітей:</label>
+                      <input type="text" class="form-control" id="children" placeholder="К-сть дітей">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="booking__bottom-side">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-8 col-md-4">
+                    <div class="form-group">
+                      <label for="suname" class="hidden-md hidden-lg">Прізвище:</label>
+                      <input type="text" class="form-control" id="suname" placeholder="Прізвище">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-8 col-md-4">
+                    <div class="form-group">
+                      <label for="name" class="hidden-md hidden-lg">Ім'я:</label>
+                      <input type="text" class="form-control" id="name" placeholder="Ім'я">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-8 col-md-4">
+                    <div class="form-group">
+                      <label for="second_name" class="hidden-md hidden-lg">По-батькові:</label>
+                      <input type="text" class="form-control" id="second_name" placeholder="По-батькові">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-3 col-lg-4">
+                    <div class="form-group">
+                      <label for="mobile" class="hidden-md hidden-lg">Номер телефону:</label>
+                      <input type="text" class="form-control" id="mobile" placeholder="Мобільний номер">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-md-3 col-lg-4">
+                    <div class="form-group">
+                      <label for="email" class="hidden-md hidden-lg">E-mail:</label>
+                      <input type="text" class="form-control" id="email" placeholder="Елетронна пошта">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-offset-18 col-sm-6 col-md-offset-0 col-md-6 col-lg-4">
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-primary btn--imaged" id="submit">Бронювати</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <ul class="slider-nav hidden-xs">
+      <li class="slider-nav__item"><a href="#" class="slider-nav__link slider-nav__link--active"></a></li>
+      <li class="slider-nav__item"><a href="#" class="slider-nav__link"></a></li>
+      <li class="slider-nav__item"><a href="#" class="slider-nav__link"></a></li>
+      <li class="slider-nav__item"><a href="#" class="slider-nav__link"></a></li>
+    </ul>
+
+  </header>
+  <!-- Header -->
+
+  <main>
+
+    <section class="page-section">
+      <div class="page-section__wrap">
+        <div class="container">
+          <header class="page-section__header">
+            <h2 class="page-section__heading">Новини Трускавця</h2>
+            <span class="page-section__small">Все що стосується відпочинку у Трускавці</span>
+          </header>
+          <div class="row">
+            <div class="col-xs-offset-4 col-xs-16 col-sm-offset-0 col-sm-8">
+
+              <article class="news-block">
+                <img class="news-block__image" src="../images/zheneva@1x.jpg" alt="Женева"
+                srcset="../images/zheneva@2x.jpg 2x" width="100%" height="auto"
+                sizes="100vw">
+                <div class="date">03<span class="date__month">січня</span></div>
+                <h3 class="news-block__heading"><a href="#">Женева без опалення</a></h3>
+              </article>
+
+            </div>
+            <div class="col-xs-24 col-sm-16">
+
+              <article class="news-line clearfix">
+                <div class="date">03<span class="date__month">січня</span></div>
+                <div class="news-line__image-wrap">
+                  <img src="../images/suvenirs@1x.jpg" alt="Сувеніри">
+                </div>
+                <h3 class="news-line__heading"><a href="#">Сувеніри Трускавця</a></h3>
+                <p class="news-wrap__description">
+                  Вы всегда сможете найти сувениры Трускавца с бесплатной доставкой
+                  по Украине. Не успели купить сувенир или подарок на курорте, заказы-
+                  вайте на сайте онлайн.
+                </p>
+                <div class="news-line__more"><a href="#">Детальніше</a></div>
+              </article>
+
+              <article class="news-line clearfix">
+                <div class="date">03<span class="date__month">січня</span></div>
+                <div class="news-line__image-wrap">
+                  <img src="../images/suvenirs@1x.jpg" alt="Сувеніри">
+                </div>
+                <h3 class="news-line__heading"><a href="#">Сувеніри Трускавця</a></h3>
+                <p class="news-wrap__description">
+                  Вы всегда сможете найти сувениры Трускавца с бесплатной доставкой
+                  по Украине. Не успели купить сувенир или подарок на курорте, заказы-
+                  вайте на сайте онлайн.
+                </p>
+                <div class="news-line__more"><a href="#">Детальніше</a></div>
+              </article>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section page-section--hot-tours">
+      <div class="page-section__top-dash">
+        <div class="page-section__bottom-dash">
+          <div class="page-section__wrap">
+            <div class="container">
+
+              <header class="page-section__header page-section__header--light">
+                <h2 class="page-section__heading">Горящі путівки</h2>
+                <span class="page-section__small page-section__small--light">Терміново та дешево - те що потрібно Вам!</span>
+              </header>
+
+              <div class="page-section__hot-tours">
+                <div class="row">
+                  <div class="col-sm-12 col-md-8 col-lg-6">
+
+
+                    <div class="tour">
+                      <div class="tour__img-wrap">
+                        <img class="tour__img" src="../images/zheneva-passion@1x.jpg"
+                             srcset="../images/zheneva-passion@2x.jpg 2x"
+                             sizes="100vw" width="100%" height="auto" alt="Женева">
+                        <div class="tour__info">
+                          <div class="row">
+                            <div class="col-xs-12">
+                              <div class="tour__food">FB<div class="tour__healing">повний пансіон</div></div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="tour__duration">7 днів<div class="tour__date">02.01 - 09.01</div></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tour__details">
+                        <div class="tour__details-top-side">
+                          <div class="row">
+                            <div class="col-xs-12">
+                              <h3 class="tour__name">
+                                <a href="#">Royal Grand</a>
+                              </h3>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="tour__location">
+                                <a href="#">Трускавець</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tour__prestige"><span class="tour__stars">5</span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span></div>
+                        </div>
+                        <div class="tour__price-wrap">
+                          <div class="row">
+                            <div class="col-xs-12"><div class="tour__price-for">Ціна за двох осіб:</div></div>
+                            <div class="col-xs-12"><div class="tour__price">6540<span class="tour__price-currency"> грн</span></div></div>
+                          </div>
+                        </div>
+                        <div class="tour__buttons">
+                          <div class="row">
+                            <div class="col-sm-12">
+                             <a href="#" class="btn btn-secondary">Детальніше</a>
+                            </div>
+                            <div class="col-sm-12">
+                              <a href="#" class="btn btn-primary">Бронювати</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                  <div class="col-sm-12 col-md-8 col-lg-6">
+
+
+                    <div class="tour">
+                      <div class="tour__img-wrap">
+                        <img class="tour__img" src="../images/zheneva-passion@1x.jpg"
+                             srcset="../images/zheneva-passion@2x.jpg 2x"
+                             sizes="100vw" width="100%" height="auto" alt="Женева">
+                        <div class="tour__info">
+                          <div class="row">
+                            <div class="col-xs-12">
+                              <div class="tour__food">FB<div class="tour__healing">повний пансіон</div></div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="tour__duration">7 днів<div class="tour__date">02.01 - 09.01</div></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tour__details">
+                        <div class="tour__details-top-side">
+                          <div class="row">
+                            <div class="col-xs-12">
+                              <h3 class="tour__name">
+                                <a href="#">Royal Grand</a>
+                              </h3>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="tour__location">
+                                <a href="#">Трускавець</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tour__prestige"><span class="tour__stars">5</span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span></div>
+                        </div>
+                        <div class="tour__price-wrap">
+                          <div class="row">
+                            <div class="col-xs-12"><div class="tour__price-for">Ціна за двох осіб:</div></div>
+                            <div class="col-xs-12"><div class="tour__price">6540<span class="tour__price-currency"> грн</span></div></div>
+                          </div>
+                        </div>
+                        <div class="tour__buttons">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <a href="#" class="btn btn-secondary">Детальніше</a>
+                            </div>
+                            <div class="col-sm-12">
+                              <a href="#" class="btn btn-primary">Бронювати</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                  <div class="col-sm-12 col-md-8 col-lg-6">
+
+
+                    <div class="tour">
+                      <div class="tour__img-wrap">
+                        <img class="tour__img" src="../images/zheneva-passion@1x.jpg"
+                             srcset="../images/zheneva-passion@2x.jpg 2x"
+                             sizes="100vw" width="100%" height="auto" alt="Женева">
+                        <div class="tour__info">
+                          <div class="row">
+                            <div class="col-xs-12">
+                              <div class="tour__food">FB<div class="tour__healing">повний пансіон</div></div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="tour__duration">7 днів<div class="tour__date">02.01 - 09.01</div></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tour__details">
+                        <div class="tour__details-top-side">
+                          <div class="row">
+                            <div class="col-xs-12">
+                              <h3 class="tour__name">
+                                <a href="#">Royal Grand</a>
+                              </h3>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="tour__location">
+                                <a href="#">Трускавець</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tour__prestige"><span class="tour__stars">5</span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span></div>
+                        </div>
+                        <div class="tour__price-wrap">
+                          <div class="row">
+                            <div class="col-xs-12"><div class="tour__price-for">Ціна за двох осіб:</div></div>
+                            <div class="col-xs-12"><div class="tour__price">6540<span class="tour__price-currency"> грн</span></div></div>
+                          </div>
+                        </div>
+                        <div class="tour__buttons">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <a href="#" class="btn btn-secondary">Детальніше</a>
+                            </div>
+                            <div class="col-sm-12">
+                              <a href="#" class="btn btn-primary">Бронювати</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                  <div class="col-sm-12 col-md-8 col-lg-6">
+
+
+                    <div class="tour">
+                      <div class="tour__img-wrap">
+                        <img class="tour__img" src="../images/zheneva-passion@1x.jpg"
+                             srcset="../images/zheneva-passion@2x.jpg 2x"
+                             sizes="100vw" width="100%" height="auto" alt="Женева">
+                        <div class="tour__info">
+                          <div class="row">
+                            <div class="col-xs-12">
+                              <div class="tour__food">FB<div class="tour__healing">повний пансіон</div></div>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="tour__duration">7 днів<div class="tour__date">02.01 - 09.01</div></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tour__details">
+                        <div class="tour__details-top-side">
+                          <div class="row">
+                            <div class="col-xs-12">
+                              <h3 class="tour__name">
+                                <a href="#">Royal Grand</a>
+                              </h3>
+                            </div>
+                            <div class="col-xs-12">
+                              <div class="tour__location">
+                                <a href="#">Трускавець</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="tour__prestige"><span class="tour__stars">5</span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span></div>
+                        </div>
+                        <div class="tour__price-wrap">
+                          <div class="row">
+                            <div class="col-xs-12"><div class="tour__price-for">Ціна за двох осіб:</div></div>
+                            <div class="col-xs-12"><div class="tour__price">6540<span class="tour__price-currency"> грн</span></div></div>
+                          </div>
+                        </div>
+                        <div class="tour__buttons">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <a href="#" class="btn btn-secondary">Детальніше</a>
+                            </div>
+                            <div class="col-sm-12">
+                              <a href="#" class="btn btn-primary">Бронювати</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section page-section--thematic">
+      <div class="page-section__wrap">
+        <div class="container">
+
+          <header class="page-section__header">
+            <h2 class="page-section__heading">Тематичні подорожі</h2>
+            <span class="page-section__small">Ми допоможемо Вам зробити казковим відпочинок!</span>
+          </header>
+
+          <div class="page-section__thematic-tours">
+
+            <article class="thematic-tour">
+              <img class="thematic-tour__img" width="100%" height="auto" src="../images/thematic-new-year@1x.jpg"
+              srcset="../images/thematic-new-year@2x.jpg 2x" sizes="100vw">
+              <div class="thematic-tour__wrap">
+                <div class="thematic-tour__wrap-inner">
+                  <h3 class="thematic-tour__heading">Новогодний вечер в отеле Rixos</h3>
+                  <p class="thematic-tour__text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standarddummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining.
+                  </p>
+                  <a href="#" class="btn btn-primary btn--imaged">Детальніше</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="thematic-tour">
+              <img class="thematic-tour__img" width="100%" height="auto" src="../images/thematic-new-year@1x.jpg"
+                   srcset="../images/thematic-new-year@2x.jpg 2x" sizes="100vw">
+              <div class="thematic-tour__wrap">
+                <div class="thematic-tour__wrap-inner">
+                  <h3 class="thematic-tour__heading">Новогодний вечер в отеле Rixos</h3>
+                  <p class="thematic-tour__text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standarddummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining.
+                  </p>
+                  <a href="#" class="btn btn-primary btn--imaged">Детальніше</a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section page-section--steps">
+
+      <div class="row">
+        <div class="col-xs-24 col-md-6">
+
+        </div>
+        <div class="col-xs-24 col-md-6"></div>
+        <div class="col-xs-24 col-md-6"></div>
+        <div class="col-xs-24 col-md-6"></div>
+      </div>
+
+    </section>
+
+  </main>
+  <footer class="page-footer">
+
+  </footer>
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

@@ -1,0 +1,35 @@
+.page-header {
+
+  background: url('../images/header-bg-desktop@1x.jpg') #2378a7 50% 0 no-repeat;
+  background-size: cover;
+  padding-bottom: 105px;
+  position: relative;
+
+  &__top-row {
+
+    padding-bottom: 34px;
+    background-color: rgba(0,0,0,0.43);
+
+  }
+
+  &__header-info {
+
+    margin-bottom: 14px;
+
+  }
+
+  &__middle-row {
+
+    background: url('../images/dash-bg-blue@1x.png') #1a658f 0 100% repeat-x;
+    background-size: 13px 3px;
+    margin-bottom: 90px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+      background-image: url('../images/dash-bg-blue@2x.png');
+
+    }
+
+  }
+
+}
