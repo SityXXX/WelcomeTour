@@ -1,0 +1,34 @@
+.soc-block {
+
+  &__heading {
+
+    padding: 10px 30px;
+    color: #ffffff;
+    font-size: 17px;
+    text-align: center;
+    border-radius: 5px;
+
+    &--facebook {
+
+      background-color: #496194;
+      border-bottom: 3px solid darken(#496194, 10%);
+
+    }
+
+    &--vk {
+
+      background-color: #6996c7;
+      border-bottom: 3px solid darken(#6996c7, 10%);
+
+    }
+
+    &--odkl {
+
+      background-color: #ff9c43;
+      border-bottom: 3px solid darken(#ff9c43, 10%);
+
+    }
+
+  }
+
+}

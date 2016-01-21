@@ -1,0 +1,12 @@
+.hot-tours {
+
+  background: url('../images/hot-tours-bg@1x.jpg') 0 0 no-repeat;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+    background-image: url('../images/hot-tours-bg@2x.jpg');
+
+  }
+
+}

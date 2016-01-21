@@ -38,11 +38,31 @@
 
     background-color: rgba(22,99,144,0.75);
     height: 100%;
-    padding: 20px 15%;
+    position: relative;
+    padding: 20px 15% 60px;
+
+    & .btn {
+
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      margin-left: -74px;
+
+    }
 
     @media (max-width: $screen-sm-max) {
 
       padding: 20px 5%;
+      position: static;
+
+      & .btn {
+
+        position: relative;
+        left: 0;
+        top: 0;
+        margin-left: 0;
+
+      }
 
     }
 

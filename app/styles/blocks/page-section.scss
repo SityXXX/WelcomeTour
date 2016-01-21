@@ -1,46 +1,5 @@
 .page-section {
 
-  &--hot-tours {
-
-    background: url('../images/hot-tours-bg@1x.jpg') 0 0 no-repeat;
-    background-size: cover;
-
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-
-      background-image: url('../images/hot-tours-bg@2x.jpg');
-
-    }
-
-  }
-
-  &--thematic {
-
-    background-color: #f7f4f4;
-
-  }
-
-  &--steps {
-
-    padding: 90px 80px;
-    background: url('../images/dash-bg-sky@1x.png') 0 50% repeat-x;
-    background-size: 13px 3px;
-
-    @media (max-width: $screen-sm-max) {
-
-      background: url('../images/dash-bg-sky-vertical@1x.png') 50% 0 repeat-y;
-      background-size: 3px 13px;
-
-    }
-
-
-  }
-
-  &__hot-tours {
-
-    overflow: hidden;
-
-  }
-
   &__top-dash {
 
     background: url('../images/dash-bg-white@1x.png') 0 0 repeat-x;

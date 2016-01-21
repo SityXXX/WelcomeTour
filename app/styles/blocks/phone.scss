@@ -1,17 +1,33 @@
 .phone {
 
-  text-align: right;
+  .page-header & {
+
+    text-align: right;
+
+  }
 
   &__wrap {
 
     display: inline-block;
-    padding-left: 29px;
-    margin-bottom: 2px;
     color: #fff;
     font-family: $font-medium;
-    font-size: 26px;
+    padding-left: 30px;
     background: url('../images/phone@1x.png') 0 50% no-repeat;
     background-size: 20px auto;
+
+    .page-footer & {
+
+
+
+    }
+
+    .page-header & {
+
+      margin-bottom: 2px;
+      font-size: 26px;
+
+    }
+
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 

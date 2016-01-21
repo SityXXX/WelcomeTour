@@ -1,0 +1,22 @@
+.social {
+
+  padding: 55px 0 45px;
+
+  &__wrap {
+
+    border: 2px dashed #dadada;
+    border-radius: 8px;
+    padding: 10px 10px 40px;
+
+  }
+
+  &__heading {
+
+    font-size: 25px;
+    font-family: $font-medium;
+    text-align: center;
+    margin-bottom: 15px;
+
+  }
+
+}
