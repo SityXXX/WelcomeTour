@@ -1,0 +1,20 @@
+.email {
+
+  padding-left: 30px;
+  display: inline-block;
+  background: url('../images/letter@1x.png') 0 50% no-repeat;
+  background-size: 16px 21px;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+    background-image: url('../images/letter@2x.png');
+
+  }
+
+  .svg & {
+
+    background-image: url('../images/letter.svg');
+
+  }
+
+}

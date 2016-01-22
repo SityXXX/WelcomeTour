@@ -2,5 +2,5 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="400px"
 	 viewBox="0 0 300 400" enable-background="new 0 0 300 400" xml:space="preserve">
-<path fill="#767676" d="M150,0C68,0,0,66,0,148c0,22,4,42,14,60c38,80,110,166,130,190c2,0,4,2,6,2s4-2,6-2c22-24,94-110,130-190 c8-18,14-38,14-60C300,66,232,0,150,0z M150,224c-42,0-78-34-78-76s34-76,78-76s78,34,78,76S192,224,150,224z"/>
+<path fill="#FFFFFF" d="M150,0C68,0,0,66,0,148c0,22,4,42,14,60c38,80,110,166,130,190c2,0,4,2,6,2s4-2,6-2c22-24,94-110,130-190 c8-18,14-38,14-60C300,66,232,0,150,0z M150,224c-42,0-78-34-78-76s34-76,78-76s78,34,78,76S192,224,150,224z"/>
 </svg>

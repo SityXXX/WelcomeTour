@@ -2,7 +2,7 @@
 
   &__top {
 
-    background-color: #3280ac
+    background: url('../images/dash-bg-dark-blue@1x.png') #3280ac 0 100% repeat-x;
 
   }
 
@@ -13,6 +13,12 @@
     &--main {
 
       background-color: #1a658f;
+
+      .page-footer__list-item {
+
+        margin-bottom: 27px;
+
+      }
 
     }
 
@@ -26,7 +32,9 @@
     font-size: 20px;
     font-family: $font-medium;
     margin-bottom: 15px;
+    padding-top: 5px;
     padding-left: 15px;
+    padding-bottom: 5px;
     padding-right: 15px;
     background-color: #1a658f;
     border-radius: 5px;
@@ -44,6 +52,7 @@
   &__list-item {
 
     margin-bottom: 15px;
+    color: #ffffff;
 
     a {
 
