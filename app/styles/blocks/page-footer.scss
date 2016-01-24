@@ -6,9 +6,16 @@
 
   }
 
+  &__bottom {
+
+    background-color: #1a658f;
+    padding: 5px 0 8px;
+
+  }
+
   &__col {
 
-    padding: 25px 0 40px 0;
+    padding: 25px 0 10px;
 
     &--main {
 
@@ -61,5 +68,19 @@
     }
 
   }
+
+  &__copyright {
+
+    font-size: 13px;
+    color: #ffffff;
+    margin-left: 10px;
+
+  }
+
+  &__social-list {
+
+
+  }
+
 
 }
