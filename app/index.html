@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="ua">
+<html class="no-js" lang="uk">
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
@@ -11,6 +11,7 @@
 
     <!-- bower:css -->
     <link rel="stylesheet" href="/bower_components/bootstrap-select/dist/css/bootstrap-select.css" />
+    <link rel="stylesheet" href="/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css" />
     <!-- endbower -->
 
     <!-- build:css styles/main.css -->
@@ -25,6 +26,8 @@
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
     <script src="/bower_components/jquery.inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
+    <script src="/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+    <script src="/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.uk.min.js"></script>
     <!-- endbower -->
   </head>
   <body>
@@ -114,16 +117,18 @@
                       <input type="text" class="form-control" id="room" placeholder="Оберіть номер">
                     </div>
                   </div>
-                  <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="form-group">
-                      <label for="arrive_date">Дата заїзду:</label>
-                      <input type="text" class="form-control" id="arrive_date" placeholder="Дата заїзду">
+                  <div class="input-daterange">
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                      <div class="form-group">
+                        <label for="arrive_date">Дата заїзду:</label>
+                        <input type="text" class="form-control" id="arrive_date" placeholder="Дата заїзду">
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="form-group">
-                      <label for="leave_date">Дата виїзду:</label>
-                      <input type="text" class="form-control" id="leave_date" placeholder="Дата виїзду">
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                      <div class="form-group">
+                        <label for="leave_date">Дата виїзду:</label>
+                        <input type="text" class="form-control" id="leave_date" placeholder="Дата виїзду">
+                      </div>
                     </div>
                   </div>
                   <div class="col-xs-12 col-sm-6 col-md-3">
@@ -204,50 +209,50 @@
             <h2 class="page-section__heading">Новини Трускавця</h2>
             <span class="page-section__small">Все що стосується відпочинку у Трускавці</span>
           </header>
-          <div class="row">
-            <div class="col-xs-offset-4 col-xs-16 col-sm-offset-0 col-sm-8">
 
-              <article class="news-block">
-                <img class="news-block__image" src="../images/zheneva@1x.jpg" alt="Женева"
-                srcset="../images/zheneva@2x.jpg 2x" width="100%" height="auto"
-                sizes="100vw">
-                <div class="date">03<span class="date__month">січня</span></div>
-                <h3 class="news-block__heading"><a href="#">Женева без опалення</a></h3>
-              </article>
 
+          <article class="news-line clearfix">
+            <div class="date">03<span class="date__month">січня</span></div>
+            <div class="news-line__image-wrap">
+              <img src="../images/suvenirs@1x.jpg" alt="Сувеніри">
             </div>
-            <div class="col-xs-24 col-sm-16">
+            <h3 class="news-line__heading"><a href="#">Сувеніри Трускавця</a></h3>
+            <p class="news-wrap__description">
+              Вы всегда сможете найти сувениры Трускавца с бесплатной доставкой
+              по Украине. Не успели купить сувенир или подарок на курорте, заказы-
+              вайте на сайте онлайн.
+            </p>
+            <div class="news-line__more"><a href="#">Детальніше</a></div>
+          </article>
 
-              <article class="news-line clearfix">
-                <div class="date">03<span class="date__month">січня</span></div>
-                <div class="news-line__image-wrap">
-                  <img src="../images/suvenirs@1x.jpg" alt="Сувеніри">
-                </div>
-                <h3 class="news-line__heading"><a href="#">Сувеніри Трускавця</a></h3>
-                <p class="news-wrap__description">
-                  Вы всегда сможете найти сувениры Трускавца с бесплатной доставкой
-                  по Украине. Не успели купить сувенир или подарок на курорте, заказы-
-                  вайте на сайте онлайн.
-                </p>
-                <div class="news-line__more"><a href="#">Детальніше</a></div>
-              </article>
-
-              <article class="news-line clearfix">
-                <div class="date">03<span class="date__month">січня</span></div>
-                <div class="news-line__image-wrap">
-                  <img src="../images/suvenirs@1x.jpg" alt="Сувеніри">
-                </div>
-                <h3 class="news-line__heading"><a href="#">Сувеніри Трускавця</a></h3>
-                <p class="news-wrap__description">
-                  Вы всегда сможете найти сувениры Трускавца с бесплатной доставкой
-                  по Украине. Не успели купить сувенир или подарок на курорте, заказы-
-                  вайте на сайте онлайн.
-                </p>
-                <div class="news-line__more"><a href="#">Детальніше</a></div>
-              </article>
-
+          <article class="news-line clearfix">
+            <div class="date">03<span class="date__month">січня</span></div>
+            <div class="news-line__image-wrap">
+              <img src="../images/suvenirs@1x.jpg" alt="Сувеніри">
             </div>
-          </div>
+            <h3 class="news-line__heading"><a href="#">Сувеніри Трускавця</a></h3>
+            <p class="news-wrap__description">
+              Вы всегда сможете найти сувениры Трускавца с бесплатной доставкой
+              по Украине. Не успели купить сувенир или подарок на курорте, заказы-
+              вайте на сайте онлайн.
+            </p>
+            <div class="news-line__more"><a href="#">Детальніше</a></div>
+          </article>
+
+          <article class="news-line clearfix">
+            <div class="date">03<span class="date__month">січня</span></div>
+            <div class="news-line__image-wrap">
+              <img src="../images/suvenirs@1x.jpg" alt="Сувеніри">
+            </div>
+            <h3 class="news-line__heading"><a href="#">Сувеніри Трускавця</a></h3>
+            <p class="news-wrap__description">
+              Вы всегда сможете найти сувениры Трускавца с бесплатной доставкой
+              по Украине. Не успели купить сувенир или подарок на курорте, заказы-
+              вайте на сайте онлайн.
+            </p>
+            <div class="news-line__more"><a href="#">Детальніше</a></div>
+          </article>
+
         </div>
       </div>
     </section>
@@ -661,7 +666,7 @@
           <div class="col-md-push-7 col-md-10">
             <div class="page-footer__col">
               <div class="page-footer__list-heading">Карта</div>
-              <div class="map"></div>
+              <div id="map" class="map"></div>
             </div>
           </div>
           <div class="col-md-pull-17 col-md-7">
@@ -705,6 +710,29 @@
       </div>
     </div>
   </footer>
+
+    <script>
+    var map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 49.277094, lng: 23.5088947},
+        zoom: 17,
+        zoomControl: false,
+        mapTypeControl: false,
+        scaleControl: true,
+        streetViewControl: false,
+        rotateControl: true
+      });
+      var image = 'images/map@1x.png';
+      var beachMarker = new google.maps.Marker({
+        position: {lat: 49.277094, lng: 23.5088947},
+        map: map,
+        icon: image
+      });
+    }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuE7UQVssKkcUvQrUq7oyjuVTAU8m3szY&callback=initMap">
+  </script>
 
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
