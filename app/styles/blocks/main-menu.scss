@@ -1,5 +1,15 @@
 .main-menu {
 
+  background: url('../images/dash-bg-blue@1x.png') #1a658f 0 100% repeat-x;
+  background-size: 13px 3px;
+  margin-bottom: 90px;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+    background-image: url('../images/dash-bg-blue@2x.png');
+
+  }
+
   @media (max-width: $screen-xs-max) {
 
     display: none;
@@ -13,91 +23,154 @@
     list-style-type: none;
     display: table;
     width: 100%;
+    font-size: 0;
+    text-align: center;
 
   }
 
   &__item {
 
-    display: table-cell;
-    text-align: center;
-
-  }
-
-  &__link {
-
-    color: #ffffff;
     font-size: 16px;
     line-height: 43px;
     text-transform: uppercase;
-    position: relative;
-    display: inline-block;
-    height: 43px;
     text-shadow: 1px 1px 1px rgba(26, 47, 126, 0.75);
-    padding-left: 30px;
-    text-decoration: none;
+    display: table-cell;
 
-    &::before {
+    > a {
 
-      content: '';
-      display: block;
-      position: absolute;
-      left: 0;
-      top: 50%;
-      margin-top: -13px;
-      height: 25px;
-      width: 26px;
-      background-image: url('../images/menu-sprite.png');
-      background-repeat: no-repeat;
-
-    }
-
-    &::after {
-
-      content: '';
-      display: block;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 3px;
-
-    }
-
-    &:focus {
-
-      text-decoration: none;
+      display: inline-block;
       color: #ffffff;
-      outline: none;
-
-    }
-
-    &:hover {
-
-      color: #35cae2;
+      padding-left: 30px;
+      position: relative;
       text-decoration: none;
 
-      &:focus {
+      // Pseudo Elements
+      &::before {
 
-        color: #35cae2;
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -13px;
+        height: 25px;
+        width: 26px;
+        background-image: url('../images/menu-sprite@1x.png');
+        background-size: 78px 200px;
+        background-repeat: no-repeat;
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+          background-image: url('../images/menu-sprite@2x.png');
+
+        }
 
       }
 
       &::after {
 
-        background-color: #35cae2;
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+
+      }
+      // End Pseudo Elements
+
+      // Pseudo Selectors
+      &:focus {
+
+        text-decoration: none;
+        color: #ffffff;
+        outline: none;
+
+      }
+
+      &:hover {
+
+        color: #35cae2;
+        text-decoration: none;
+
+        &:focus {
+
+          color: #35cae2;
+
+        }
+
+        &::after {
+
+          background-color: #35cae2;
+
+        }
+
+      }
+      // End Pseudo
+
+    }
+
+
+    // Active items
+    &--active {
+
+      // All active links
+      & > a {
+
+        color: #fc8929;
+
+        // Active links pseudo elements
+        &::after {
+
+          background-color: #fc8929;
+
+        }
+
+        // Active links hover
+        &:hover {
+
+          color: #fc8929;
+
+          &:focus {
+
+            color: #fc8929;
+
+          }
+
+          // Active links hover pseudo elements
+          &::after {
+
+            background-color: #fc8929;
+
+          }
+
+        }
+
+        &:focus {
+
+          color: #fc8929;
+
+        }
 
       }
 
     }
+    // End active item
 
+    // Media item styles
     @media (max-width: $screen-sm-max) {
 
       font-size: 13px;
 
     }
+    // End media active styles
 
   }
+  // End item styles
 
+
+  // Home link styles
   &__link-home {
 
     &::before {
@@ -116,9 +189,7 @@
 
     }
 
-    &--active {
-
-      color: #fc8929;
+    .main-menu__item--active & {
 
       &::before {
 
@@ -126,42 +197,13 @@
 
       }
 
-      &::after {
-
-        background-color: #fc8929;
-
-      }
-
-      &:hover {
-
-        color: #fc8929;
-
-        &::before {
-
-          background-position: -52px 0;
-
-        }
-
-        &::after {
-
-          background-color: #fc8929;
-
-        }
-
-      }
-
-      &:focus {
-
-        color: #fc8929;
-
-      }
-
     }
 
   }
+  // End home link styles
 
 
-
+  // City link styles
   &__link-city {
 
     &::before {
@@ -180,9 +222,7 @@
 
     }
 
-    &--active {
-
-      color: #fc8929;
+    .main-menu__item--active & {
 
       &::before {
 
@@ -190,43 +230,14 @@
 
       }
 
-      &::after {
-
-        background-color: #fc8929;
-
-      }
-
-      &:hover {
-
-        color: #fc8929;
-
-        &::before {
-
-          background-position: -52px -25px;
-
-        }
-
-        &::after {
-
-          background-color: #fc8929;
-
-        }
-
-      }
-
-      &:focus {
-
-        color: #fc8929;
-
-      }
-
     }
 
   }
+  // End city link styles
 
 
-
-  &__link-sanatory {
+  // Resorts link styles
+  &__link-resorts {
 
     &::before {
 
@@ -244,9 +255,7 @@
 
     }
 
-    &--active {
-
-      color: #fc8929;
+    .main-menu__item--active & {
 
       &::before {
 
@@ -254,43 +263,14 @@
 
       }
 
-      &::after {
-
-        background-color: #fc8929;
-
-      }
-
-      &:hover {
-
-        color: #fc8929;
-
-        &::before {
-
-          background-position: -52px -50px;
-
-        }
-
-        &::after {
-
-          background-color: #fc8929;
-
-        }
-
-      }
-
-      &:focus {
-
-        color: #fc8929;
-
-      }
-
     }
 
   }
+  // End resorts link styles
 
 
-
-  &__link-medic {
+  // Medicine link styles
+  &__link-medicine {
 
     &::before {
 
@@ -308,9 +288,7 @@
 
     }
 
-    &--active {
-
-      color: #fc8929;
+    .main-menu__item--active & {
 
       &::before {
 
@@ -318,42 +296,13 @@
 
       }
 
-      &::after {
-
-        background-color: #fc8929;
-
-      }
-
-      &:hover {
-
-        color: #fc8929;
-
-        &::before {
-
-          background-position: -52px -75px;
-
-        }
-
-        &::after {
-
-          background-color: #fc8929;
-
-        }
-
-      }
-
-      &:focus {
-
-        color: #fc8929;
-
-      }
-
     }
 
   }
+  // End medicine link styles
 
 
-
+  // Children link styles
   &__link-children {
 
     &::before {
@@ -372,9 +321,7 @@
 
     }
 
-    &--active {
-
-      color: #fc8929;
+    .main-menu__item--active & {
 
       &::before {
 
@@ -382,43 +329,14 @@
 
       }
 
-      &::after {
-
-        background-color: #fc8929;
-
-      }
-
-      &:hover {
-
-        color: #fc8929;
-
-        &::before {
-
-          background-position: -52px -100px;
-
-        }
-
-        &::after {
-
-          background-color: #fc8929;
-
-        }
-
-      }
-
-      &:focus {
-
-        color: #fc8929;
-
-      }
-
     }
 
   }
+  // End children link styles
 
 
-
-  &__link-price {
+  // Prices link styles
+  &__link-prices {
 
     &::before {
 
@@ -436,9 +354,7 @@
 
     }
 
-    &--active {
-
-      color: #fc8929;
+    .main-menu__item--active & {
 
       &::before {
 
@@ -446,42 +362,13 @@
 
       }
 
-      &::after {
-
-        background-color: #fc8929;
-
-      }
-
-      &:hover {
-
-        color: #fc8929;
-
-        &::before {
-
-          background-position: -52px -125px;
-
-        }
-
-        &::after {
-
-          background-color: #fc8929;
-
-        }
-
-      }
-
-      &:focus {
-
-        color: #fc8929;
-
-      }
-
     }
 
   }
+  // End prices link styles
 
 
-
+  // City link styles
   &__link-map {
 
     &::before {
@@ -500,9 +387,7 @@
 
     }
 
-    &--active {
-
-      color: #fc8929;
+    .main-menu__item--active & {
 
       &::before {
 
@@ -510,42 +395,13 @@
 
       }
 
-      &::after {
-
-        background-color: #fc8929;
-
-      }
-
-      &:hover {
-
-        color: #fc8929;
-
-        &::before {
-
-          background-position: -52px -150px;
-
-        }
-
-        &::after {
-
-          background-color: #fc8929;
-
-        }
-
-      }
-
-      &:focus {
-
-        color: #fc8929;
-
-      }
-
     }
 
   }
+  // End map link styles
 
 
-
+  // City contacts styles
   &__link-contacts {
 
     &::before {
@@ -564,9 +420,7 @@
 
     }
 
-    &--active {
-
-      color: #fc8929;
+    .main-menu__item--active & {
 
       &::before {
 
@@ -574,38 +428,9 @@
 
       }
 
-      &::after {
-
-        background-color: #fc8929;
-
-      }
-
-      &:hover {
-
-        color: #fc8929;
-
-        &::before {
-
-          background-position: -52px -175px;
-
-        }
-
-        &::after {
-
-          background-color: #fc8929;
-
-        }
-
-      }
-
-      &:focus {
-
-        color: #fc8929;
-
-      }
-
     }
 
   }
+  // End contacts link styles
 
 }

@@ -1,16 +1,5 @@
 .steps {
 
-  padding: 150px 0;
-  background: url('../images/dash-bg-sky@1x.png') 0 50% repeat-x;
-  background-size: 13px 3px;
-
-  @media (max-width: $screen-xs-max) {
-
-    background: url('../images/dash-bg-sky-vertical@1x.png') 50% 0 repeat-y;
-    background-size: 3px 13px;
-
-  }
-
   &__step {
 
     position: relative;

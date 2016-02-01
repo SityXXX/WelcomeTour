@@ -21,6 +21,12 @@
 
       background-color: #1a658f;
 
+      @media (max-width: $screen-sm-max) {
+
+        background-color: transparent;
+
+      }
+
       .page-footer__list-item {
 
         margin-bottom: 27px;

@@ -9,6 +9,7 @@
   &__item {
 
     display: inline-block;
+    margin: 0 6px;
 
   }
 
@@ -17,11 +18,11 @@
     display: block;
     width: 28px;
     height: 28px;
-    margin: 0 6px;
     border-radius: 2px;
     background-color: #8baec2;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+
 
     &--fb {
 

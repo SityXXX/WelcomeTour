@@ -24,6 +24,46 @@
 
   }
 
+  &--news {
+
+    background-color: #ffffff;
+
+  }
+
+  &--hot-tours {
+
+    background: url('../images/hot-tours-bg@1x.jpg') 0 0 no-repeat;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+      background-image: url('../images/hot-tours-bg@2x.jpg');
+
+    }
+
+  }
+
+  &--thematic-tours {
+
+
+
+  }
+
+  &--steps{
+
+    padding: 150px 0;
+    background: url('../images/dash-bg-sky@1x.png') #ffffff 0 50% repeat-x;
+    background-size: 13px 3px;
+
+    @media (max-width: $screen-xs-max) {
+
+      background: url('../images/dash-bg-sky-vertical@1x.png') #ffffff 50% 0 repeat-y;
+      background-size: 3px 13px;
+
+    }
+
+  }
+
   &__wrap {
 
     padding: 50px 0 50px;

@@ -18,18 +18,4 @@
 
   }
 
-  &__middle-row {
-
-    background: url('../images/dash-bg-blue@1x.png') #1a658f 0 100% repeat-x;
-    background-size: 13px 3px;
-    margin-bottom: 90px;
-
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-
-      background-image: url('../images/dash-bg-blue@2x.png');
-
-    }
-
-  }
-
 }
