@@ -9,13 +9,10 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
-    <!-- bower:css -->
-    <link rel="stylesheet" href="/bower_components/bootstrap-select/dist/css/bootstrap-select.css" />
-    <link rel="stylesheet" href="/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css" />
-    <!-- endbower -->
-
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/vendor/bootstrap-datepicker3.css">
+    <link rel="stylesheet" href="styles/vendor/bootstrap-select.css">
     <!-- endbuild -->
 
     <!-- build:js scripts/vendor/modernizr.js -->
@@ -24,9 +21,10 @@
 
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
     <script src="/bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
     <script src="/bower_components/jquery.inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
-    <script src="/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+    <script src="/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
     <script src="/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.uk.min.js"></script>
     <!-- endbower -->
   </head>
@@ -80,22 +78,20 @@
       </div>
     </div>
 
-    <div class="page-header__middle-row">
+    <nav class="main-menu">
       <div class="container">
-        <nav class="main-menu">
-          <ul class="main-menu__list">
-            <li class="main-menu__item"><a href="#" class="main-menu__link main-menu__link-home main-menu__link-home--active">Головна</a></li>
-            <li class="main-menu__item"><a href="#" class="main-menu__link main-menu__link-city">Трускавець</a></li>
-            <li class="main-menu__item"><a href="#" class="main-menu__link main-menu__link-sanatory">Санаторії</a></li>
-            <li class="main-menu__item"><a href="#" class="main-menu__link main-menu__link-medic">Лікування</a></li>
-            <li class="main-menu__item"><a href="#" class="main-menu__link main-menu__link-children">Діти</a></li>
-            <li class="main-menu__item"><a href="#" class="main-menu__link main-menu__link-price">Ціни</a></li>
-            <li class="main-menu__item"><a href="#" class="main-menu__link main-menu__link-map">Карта</a></li>
-            <li class="main-menu__item"><a href="#" class="main-menu__link main-menu__link-contacts">Контакти</a></li>
-          </ul>
-        </nav>
+        <ul class="main-menu__list">
+          <li class="main-menu__item main-menu__item--active"><a class="main-menu__link-home" href="#">Головна</a></li>
+          <li class="main-menu__item"><a class="main-menu__link-city" href="#">Трускавець</a></li>
+          <li class="main-menu__item"><a class="main-menu__link-resorts" href="#">Санаторії</a></li>
+          <li class="main-menu__item"><a class="main-menu__link-medicine" href="#">Лікування</a></li>
+          <li class="main-menu__item"><a class="main-menu__link-children" href="#">Діти</a></li>
+          <li class="main-menu__item"><a class="main-menu__link-prices" href="#">Ціни</a></li>
+          <li class="main-menu__item"><a class="main-menu__link-map" href="#">Карта</a></li>
+          <li class="main-menu__item"><a class="main-menu__link-contacts" href="#">Контакти</a></li>
+        </ul>
       </div>
-    </div>
+    </nav>
 
     <div class="page-header__bottom-row">
       <div class="container">
@@ -177,7 +173,7 @@
                       <input type="text" class="form-control" id="email" placeholder="Елетронна пошта">
                     </div>
                   </div>
-                  <div class="col-xs-12 col-sm-offset-18 col-sm-6 col-md-offset-0 col-md-6 col-lg-4">
+                  <div class="col-xs-24 col-sm-offset-18 col-sm-6 col-md-offset-0 col-md-6 col-lg-4">
                     <div class="form-group">
                       <button type="submit" class="btn btn-primary btn--imaged" id="submit">Бронювати</button>
                     </div>
@@ -202,7 +198,7 @@
 
   <main>
 
-    <section class="page-section">
+    <section class="page-section page-section--news">
       <div class="page-section__wrap">
         <div class="container">
           <header class="page-section__header">
@@ -257,7 +253,7 @@
       </div>
     </section>
 
-    <section class="page-section hot-tours">
+    <section class="page-section page-section--hot-tours">
       <div class="page-section__top-dash">
         <div class="page-section__bottom-dash">
           <div class="page-section__wrap">
@@ -317,7 +313,7 @@
                              <a href="#" class="btn btn-secondary">Детальніше</a>
                             </div>
                             <div class="col-sm-12">
-                              <a href="#" class="btn btn-primary">Бронювати</a>
+                              <a href="#" class="btn btn-primary btn--booking">Бронювати</a>
                             </div>
                           </div>
                         </div>
@@ -373,7 +369,7 @@
                               <a href="#" class="btn btn-secondary">Детальніше</a>
                             </div>
                             <div class="col-sm-12">
-                              <a href="#" class="btn btn-primary">Бронювати</a>
+                              <a href="#" class="btn btn-primary btn--booking">Бронювати</a>
                             </div>
                           </div>
                         </div>
@@ -429,7 +425,7 @@
                               <a href="#" class="btn btn-secondary">Детальніше</a>
                             </div>
                             <div class="col-sm-12">
-                              <a href="#" class="btn btn-primary">Бронювати</a>
+                              <a href="#" class="btn btn-primary btn--booking">Бронювати</a>
                             </div>
                           </div>
                         </div>
@@ -482,16 +478,15 @@
                         <div class="tour__buttons">
                           <div class="row">
                             <div class="col-sm-12">
-                              <a href="#" class="btn btn-secondary">Детальніше</a>
+                              <a href="#" class="btn btn-secondary btn--more">Детальніше</a>
                             </div>
                             <div class="col-sm-12">
-                              <a href="#" class="btn btn-primary">Бронювати</a>
+                              <a href="#" class="btn btn-primary btn--booking btn--booking">Бронювати</a>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-
 
                   </div>
                 </div>
@@ -502,7 +497,7 @@
       </div>
     </section>
 
-    <section class="page-section thematic-tours">
+    <section class="page-section page-section--thematic-tours">
       <div class="page-section__wrap">
         <div class="container">
 
@@ -511,7 +506,7 @@
             <span class="page-section__small">Ми допоможемо Вам зробити казковим відпочинок!</span>
           </header>
 
-          <div class="thematic-tours__wrap">
+          <div class="thematic-tours">
 
             <article class="thematic-tour">
               <img class="thematic-tour__img" width="100%" height="auto" src="../images/thematic-new-year@1x.jpg"
@@ -552,58 +547,60 @@
       </div>
     </section>
 
-    <section class="page-section steps">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-24 col-sm-6">
-            <div class="steps__step">
-              <div class="steps__number">1</div>
-              <div class="steps__circle">
-                <div class="steps__circle-wrap">
-                  <div class="steps__circle-wrap-inner">
-                    <div class="steps__icon steps__icon--search"></div>
+    <section class="page-section page-section--steps">
+      <div class="page-section__wrap">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-24 col-sm-6">
+              <div class="steps__step">
+                <div class="steps__number">1</div>
+                <div class="steps__circle">
+                  <div class="steps__circle-wrap">
+                    <div class="steps__circle-wrap-inner">
+                      <div class="steps__icon steps__icon--search"></div>
+                    </div>
                   </div>
+                  <div class="steps__text">Найдіть потрібний тур</div>
                 </div>
-                <div class="steps__text">Найдіть потрібний тур</div>
               </div>
             </div>
-          </div>
-          <div class="col-xs-24 col-sm-6">
-            <div class="steps__step">
-              <div class="steps__number">2</div>
-              <div class="steps__circle">
-                <div class="steps__circle-wrap">
-                  <div class="steps__circle-wrap-inner">
-                    <div class="steps__icon steps__icon--edit"></div>
+            <div class="col-xs-24 col-sm-6">
+              <div class="steps__step">
+                <div class="steps__number">2</div>
+                <div class="steps__circle">
+                  <div class="steps__circle-wrap">
+                    <div class="steps__circle-wrap-inner">
+                      <div class="steps__icon steps__icon--edit"></div>
+                    </div>
                   </div>
+                  <div class="steps__text">Заповніть усі поля форми</div>
                 </div>
-                <div class="steps__text">Заповніть усі поля форми</div>
               </div>
             </div>
-          </div>
-          <div class="col-xs-24 col-sm-6">
-            <div class="steps__step">
-              <div class="steps__number">3</div>
-              <div class="steps__circle">
-                <div class="steps__circle-wrap">
-                  <div class="steps__circle-wrap-inner">
-                    <div class="steps__icon steps__icon--card"></div>
+            <div class="col-xs-24 col-sm-6">
+              <div class="steps__step">
+                <div class="steps__number">3</div>
+                <div class="steps__circle">
+                  <div class="steps__circle-wrap">
+                    <div class="steps__circle-wrap-inner">
+                      <div class="steps__icon steps__icon--card"></div>
+                    </div>
                   </div>
+                  <div class="steps__text">Оплатіть зручним для Вас способом</div>
                 </div>
-                <div class="steps__text">Оплатіть зручним для Вас способом</div>
               </div>
             </div>
-          </div>
-          <div class="col-xs-24 col-sm-6">
-            <div class="steps__step">
-              <div class="steps__number">4</div>
-              <div class="steps__circle">
-                <div class="steps__circle-wrap">
-                  <div class="steps__circle-wrap-inner">
-                    <div class="steps__icon steps__icon--mountines"></div>
+            <div class="col-xs-24 col-sm-6">
+              <div class="steps__step">
+                <div class="steps__number">4</div>
+                <div class="steps__circle">
+                  <div class="steps__circle-wrap">
+                    <div class="steps__circle-wrap-inner">
+                      <div class="steps__icon steps__icon--mountines"></div>
+                    </div>
                   </div>
+                  <div class="steps__text">Насолоджуйтесь відпочинком</div>
                 </div>
-                <div class="steps__text">Насолоджуйтесь відпочинком</div>
               </div>
             </div>
           </div>
@@ -647,6 +644,7 @@
 
   </main>
 
+  <!-- Page footer -->
   <footer class="page-footer">
     <div class="page-footer__top">
       <div class="container">
@@ -710,8 +708,9 @@
       </div>
     </div>
   </footer>
+  <!-- Page footer -->
 
-    <script>
+  <script>
     var map;
     function initMap() {
       map = new google.maps.Map(document.getElementById('map'), {
@@ -731,6 +730,7 @@
       });
     }
   </script>
+
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuE7UQVssKkcUvQrUq7oyjuVTAU8m3szY&callback=initMap">
   </script>
 
