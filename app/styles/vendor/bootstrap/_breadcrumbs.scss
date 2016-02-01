@@ -5,10 +5,11 @@
 
 .breadcrumb {
   padding: $breadcrumb-padding-vertical $breadcrumb-padding-horizontal;
-  margin-bottom: $line-height-computed;
+  margin-bottom: 0;
   list-style: none;
-  background-color: $breadcrumb-bg;
-  border-radius: $border-radius-base;
+  font-family: $font-light;
+  //background-color: $breadcrumb-bg;
+  //border-radius: $border-radius-base;
 
   > li {
     display: inline-block;
@@ -20,9 +21,23 @@
       padding: 0 5px;
       color: $breadcrumb-color;
     }
+
+    a {
+
+      color: #787878;
+      text-decoration: none;
+
+      &:hover {
+
+        text-decoration: underline;
+
+      }
+
+    }
   }
 
   > .active {
     color: $breadcrumb-active-color;
   }
+
 }
