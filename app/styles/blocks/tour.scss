@@ -1,21 +1,40 @@
 .tour {
 
-  max-width: 300px;
   margin-bottom: 20px;
-  border-radius: 5px;
+  height: 370px;
   overflow: hidden;
-  background-color: #ffffff;
+  position: relative;
+  min-height: 1px;
   border-bottom: 2px solid #c8c8c8;
+  border-radius: 5px;
+  text-align: left;
+
+  &__wrap {
+
+    background-color: #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+
+  }
 
   &:hover {
 
-    box-shadow: 0 0 15px #ccc;
+    overflow: visible;
+
+    .tour__wrap {
+
+        box-shadow: 0 0 12px #333;
+        border-bottom: 2px solid #c8c8c8;
+        position: absolute;
+        z-index: 1;
+
+    }
 
   }
 
   &__details {
 
-    padding: 10px;
+    padding: 10px 15px;
 
   }
 
@@ -162,6 +181,18 @@
 
   }
 
+  .smoke {
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(80%, #fff), color-stop(100%, #fff));
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0) 0%, #fff 80%, #fff 100%);
+    background: -moz-linear-gradient(rgba(255, 255, 255, 0) 0%, #fff 80%, #fff 100%);
+    background: -o-linear-gradient(rgba(255, 255, 255, 0) 0%, #fff 80%, #fff 100%);
+    background: linear-gradient(rgba(255, 255, 255, 0) 0%, #fff 80%, #fff 100%);
+  }
 
   &__buttons {
 
@@ -171,9 +202,15 @@
 
     }
 
-    .page-tours & {
+    .page--tours & {
 
       display: none;
+
+    }
+
+    .page--tours .tour:hover & {
+
+      display: block;
 
     }
 

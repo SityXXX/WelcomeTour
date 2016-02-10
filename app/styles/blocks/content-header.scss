@@ -1,0 +1,53 @@
+.content-header {
+
+  text-align: center;
+  margin: 0 0 20px 0;
+
+  &__heading {
+
+    font-size: 40px;
+    text-transform: uppercase;
+
+    @media (max-width: $screen-sm-max) {
+
+      font-size: 32px;
+
+    }
+
+    &::after {
+
+      content: '';
+      display: block;
+      height: 1px;
+      background-color: #fc8929;
+      width: 20%;
+      margin: 10px auto 0 auto;
+
+      @media (max-width: $screen-xs-max) {
+
+        width: 40%;
+
+      }
+
+    }
+
+  }
+
+  &__small {
+
+    font-size: 18px;
+    color: #8b8b8b;
+
+  }
+
+  &--light {
+
+    .content-header__heading, .content-header__small {
+
+      color: #ffffff;
+
+    }
+
+  }
+
+}

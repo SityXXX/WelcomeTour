@@ -1,0 +1,85 @@
+.inline-greed {
+
+  font-size: 0;
+
+  &__block {
+
+    display: inline-block;
+    vertical-align: top;
+    font-size: $font-size-base;
+    width: 25%;
+    padding: 0 5px;
+
+    &:first-child {
+
+      padding-left: 0;
+
+    }
+
+    @media (min-width: $screen-lg-min) {
+
+      &:nth-child(4n) {
+
+        padding-right: 0;
+
+      }
+
+      &:nth-child(5n) {
+
+        padding-left: 0;
+
+      }
+
+    }
+
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+
+      width: 33.33333%;
+
+      &:nth-child(3n) {
+
+        padding-right: 0;
+
+      }
+
+      &:nth-child(4n) {
+
+        padding-left: 0;
+
+      }
+
+    }
+
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+
+      width: 50%;
+
+      &:nth-child(2n) {
+
+        padding-right: 0;
+
+      }
+
+      &:nth-child(3n) {
+
+        padding-left: 0;
+
+      }
+
+    }
+
+    @media (min-width: $screen-xs-min) and (max-width: $screen-xs-max) {
+
+      width: 100%;
+
+      &:last-child {
+
+        padding-right: 0;
+
+      }
+
+    }
+
+  }
+
+}
