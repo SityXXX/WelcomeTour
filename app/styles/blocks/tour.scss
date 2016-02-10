@@ -4,6 +4,20 @@
   margin-bottom: 20px;
   border-radius: 5px;
   overflow: hidden;
+  background-color: #ffffff;
+  border-bottom: 2px solid #c8c8c8;
+
+  &:hover {
+
+    box-shadow: 0 0 15px #ccc;
+
+  }
+
+  &__details {
+
+    padding: 10px;
+
+  }
 
   &__img-wrap {
 
@@ -35,6 +49,8 @@
   &__resort {
 
     width: 100%;
+    padding-top: 5px;
+    margin-bottom: 10px;
 
     .table-col {
 
@@ -89,6 +105,15 @@
   &__price-block {
 
     width: 100%;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #cfcfcf;
+
+    .table-col {
+
+      vertical-align: middle;
+
+    }
 
   }
 
@@ -125,80 +150,6 @@
 
   }
 
-
-
-
-
-
-
-  &__info {
-
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(41,199,224,0.64);
-    padding: 10px 15px;
-    color: #ffffff;
-
-    [class^='col-']:first-child {
-
-      border-right: 1px solid #ffffff;
-
-    }
-
-  }
-
-  &__comfort {
-
-    font-family: $font-medium;
-    font-size: 17px;
-    margin-bottom: 5px;
-
-  }
-
-  &__details {
-
-    background-color: #ffffff;
-    padding: 10px 15px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-
-  }
-
-  &__food, &__duration {
-
-    font-size: 17px;
-    font-family: $font-medium;
-
-  }
-
-  &__healing, &__date {
-
-    font-size: 15px;
-    font-family: $font-light;
-
-  }
-
-
-
-
-
-
-
-  &__details-top-side {
-
-    border-bottom: 1px dotted #767676;
-    margin-bottom: 10px;
-
-    .page-tours & {
-
-      border-bottom: none;
-      margin-bottom: 0;
-
-    }
-
-  }
-
   &__stars {
 
     font-size: 0;
@@ -210,6 +161,7 @@
     color: #ffd200;
 
   }
+
 
   &__buttons {
 
