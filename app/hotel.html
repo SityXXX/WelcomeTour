@@ -1,0 +1,358 @@
+<!doctype html>
+<html class="no-js" lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WelcomeTour</title>
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/vendor/bootstrap-datepicker3.css">
+  <link rel="stylesheet" href="styles/vendor/bootstrap-select.css">
+  <!-- endbuild -->
+
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+
+  <!-- bower:js -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+  <script src="/bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
+  <script src="/bower_components/jquery.inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
+  <script src="/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+  <script src="/bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.uk.min.js"></script>
+  <!-- endbower -->
+</head>
+<body>
+
+<!-- Header -->
+<header class="page-header">
+
+  <div class="page-header__top-row">
+    <div class="container">
+
+      <div class="language">
+        <div class="language__wrap">
+          <select class="language-dropdown" name="language" id="language">
+            <option value="ua">UA</option>
+            <option value="ru">RUS</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="page-header__header-info">
+        <div class="row">
+          <div class="col-sm-12">
+
+            <a href="#" class="logo">WelcomeTour</a>
+
+          </div>
+          <div class="col-sm-12">
+
+            <div class="phone"><div class="phone__wrap">+38 (067) 477-44-53</div></div>
+            <div class="worktime"><div class="worktime__wrap">пн - пт: з 9<sup>00</sup> до 18<sup>00</sup>, сб: з 10<sup>00</sup> до 13<sup>00</sup></div></div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-24">
+          <form action="/" enctype="application/x-www-form-urlencoded">
+
+            <div class="form-group">
+              <div class="search">
+                <input type="text" name="search" class="form-control search__field" placeholder="Поиск">
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <nav class="main-menu">
+    <div class="container">
+      <ul class="main-menu__list">
+        <li class="main-menu__item main-menu__item--active"><a class="main-menu__link-home" href="#">Головна</a></li>
+        <li class="main-menu__item"><a class="main-menu__link-city" href="#">Трускавець</a></li>
+        <li class="main-menu__item"><a class="main-menu__link-resorts" href="#">Санаторії</a></li>
+        <li class="main-menu__item"><a class="main-menu__link-medicine" href="#">Лікування</a></li>
+        <li class="main-menu__item"><a class="main-menu__link-children" href="#">Діти</a></li>
+        <li class="main-menu__item"><a class="main-menu__link-prices" href="#">Ціни</a></li>
+        <li class="main-menu__item"><a class="main-menu__link-map" href="#">Карта</a></li>
+        <li class="main-menu__item"><a class="main-menu__link-contacts" href="#">Контакти</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-header__bottom-row">
+    <div class="container">
+      <div class="booking">
+        <div class="booking__heading">Оберіть найкращий відпочинок в Трускавці</div>
+        <div class="booking__panel">
+          <form action="/" enctype="application/x-www-form-urlencoded">
+            <div class="booking__top-side">
+              <div class="row">
+                <div class="col-sm-12 col-md-5">
+                  <div class="form-group">
+                    <label for="residence">Проживання:</label>
+                    <input type="text" class="form-control" id="residence" placeholder="Оберіть проживання">
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-5">
+                  <div class="form-group">
+                    <label for="room">Номер:</label>
+                    <input type="text" class="form-control" id="room" placeholder="Оберіть номер">
+                  </div>
+                </div>
+                <div class="input-daterange">
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="form-group">
+                      <label for="arrive_date">Дата заїзду:</label>
+                      <input type="text" class="form-control" id="arrive_date" placeholder="Дата заїзду">
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="form-group">
+                      <label for="leave_date">Дата виїзду:</label>
+                      <input type="text" class="form-control" id="leave_date" placeholder="Дата виїзду">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                  <div class="form-group">
+                    <label for="adults">Дорослих:</label>
+                    <input type="text" class="form-control" id="adults" placeholder="К-сть дорослих">
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                  <div class="form-group">
+                    <label for="children">Дітей:</label>
+                    <input type="text" class="form-control" id="children" placeholder="К-сть дітей">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="booking__bottom-side">
+              <div class="row">
+                <div class="col-xs-12 col-sm-8 col-md-4">
+                  <div class="form-group">
+                    <label for="suname" class="hidden-md hidden-lg">Прізвище:</label>
+                    <input type="text" class="form-control" id="suname" placeholder="Прізвище">
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-4">
+                  <div class="form-group">
+                    <label for="name" class="hidden-md hidden-lg">Ім'я:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Ім'я">
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-4">
+                  <div class="form-group">
+                    <label for="second_name" class="hidden-md hidden-lg">По-батькові:</label>
+                    <input type="text" class="form-control" id="second_name" placeholder="По-батькові">
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-3 col-lg-4">
+                  <div class="form-group">
+                    <label for="mobile" class="hidden-md hidden-lg">Номер телефону:</label>
+                    <input type="text" class="form-control" id="mobile" placeholder="Мобільний номер">
+                  </div>
+                </div>
+                <div class="col-xs-12 col-md-3 col-lg-4">
+                  <div class="form-group">
+                    <label for="email" class="hidden-md hidden-lg">E-mail:</label>
+                    <input type="text" class="form-control" id="email" placeholder="Елетронна пошта">
+                  </div>
+                </div>
+                <div class="col-xs-24 col-sm-offset-18 col-sm-6 col-md-offset-0 col-md-6 col-lg-4">
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn--imaged" id="submit">Бронювати</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ul class="slider-nav hidden-xs">
+    <li class="slider-nav__item"><a href="#" class="slider-nav__link slider-nav__link--active"></a></li>
+    <li class="slider-nav__item"><a href="#" class="slider-nav__link"></a></li>
+    <li class="slider-nav__item"><a href="#" class="slider-nav__link"></a></li>
+    <li class="slider-nav__item"><a href="#" class="slider-nav__link"></a></li>
+  </ul>
+
+</header>
+<!-- Header -->
+
+<div class="breadcrumbs">
+  <div class="container">
+    <ol class="breadcrumb">
+      <li><a href="#">Головна</a></li>
+      <li class="active">Санаторії</li>
+    </ol>
+  </div>
+</div>
+
+<main class="page-hotel">
+
+  <div class="container">
+
+    <header class="content-header">
+      <h2 class="content-header__heading">Rixos Прикартаття</h2>
+      <span class="content-header__small">Улица Городище 8, Трускавец, 82200, Украина</span>
+    </header>
+
+    <div class="resort">
+      <div class="row">
+        <div class="col-md-16">
+          <div class="resort__main-image">
+            <img class="imgresort__" src="../images/rixos-room@1x.jpg" alt="Rixos прикапаття" srcset="../images/rixos-room@2x.jpg 2x"
+                 sizes="100vw">
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="resort__main-info">
+            <p class="resort__description">
+              В этом 5-звездочном курортном комп на территории площадью 12 га в центре вас ждут большой спа-салон,
+              открытый корты и детская игровая площадка. В этом 5 звездочном курортном комплексе, расположенном на
+              территории площадью 12га в центре города Трускавец, вас ждут большой спа-салон, открытый бассейн.
+            </p>
+            <div class="resort__service">
+              <div class="resort__service-header">
+                Ось що подобається нашим гостям:
+              </div>
+              <div class="resort__service-images">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <img src="../images/ai@1x.png" alt="Все включено">
+                  </div>
+                  <div class="col-xs-6">
+                    <img src="../images/ai@1x.png" alt="Все включено">
+                  </div>
+                  <div class="col-xs-6">
+                    <img src="../images/ai@1x.png" alt="Все включено">
+                  </div>
+                  <div class="col-xs-6">
+                    <img src="../images/ai@1x.png" alt="Все включено">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</main>
+
+<footer class="page-footer">
+  <div class="page-footer__top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-push-7 col-md-7">
+          <div class="page-footer__col">
+            <div class="page-footer__list-heading">Віддих</div>
+            <ul class="page-footer__list">
+              <li class="page-footer__list-item page-footer__list-item--selected">Санаторії</li>
+              <li class="page-footer__list-item"><a href="#">Готелі</a></li>
+              <li class="page-footer__list-item"><a href="#">Вілли</a></li>
+              <li class="page-footer__list-item"><a href="#">Квартири</a></li>
+              <li class="page-footer__list-item"><a href="#">Приватний сектор</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-push-7 col-md-10">
+          <div class="page-footer__col">
+            <div class="page-footer__list-heading">Карта</div>
+            <div id="map" class="map"></div>
+          </div>
+        </div>
+        <div class="col-md-pull-17 col-md-7">
+          <div class="page-footer__col page-footer__col--main">
+            <div class="page-footer__list-heading">Контакти</div>
+            <ul class="page-footer__list">
+              <li class="page-footer__list-item">
+                <div class="phone">
+                  <div class="phone__wrap">+38 (067) 477-44-53</div>
+                </div>
+              </li>
+              <li class="page-footer__list-item">
+                <div class="skype">WelcomeTour</div>
+              </li>
+              <li class="page-footer__list-item">
+                <div class="address">м.Трускавець, вул.Річки 8</div>
+              </li>
+              <li class="page-footer__list-item">
+                <div class="email"><a href="mailto:feedback@welcometour.com.ua">feedback@welcometour.com.ua</a></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-footer__bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="page-footer__copyright">Copyright &copy; 2010-2015</div>
+        </div>
+        <div class="col-xs-12">
+          <ul class="social-links">
+            <li class="social-links__item"><a href="#" class="social-links__link social-links__link--vk">Вконтакті</a>
+            </li>
+            <li class="social-links__item"><a href="#" class="social-links__link social-links__link--fb">Facebook</a>
+            </li>
+            <li class="social-links__item"><a href="#" class="social-links__link social-links__link--od">Однокласники</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var map;
+  function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: 49.277094, lng: 23.5088947},
+      zoom: 17,
+      zoomControl: false,
+      mapTypeControl: false,
+      scaleControl: true,
+      streetViewControl: false,
+      rotateControl: true
+    });
+    var image = 'images/map@1x.png';
+    var beachMarker = new google.maps.Marker({
+      position: {lat: 49.277094, lng: 23.5088947},
+      map: map,
+      icon: image
+    });
+  }
+</script>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuE7UQVssKkcUvQrUq7oyjuVTAU8m3szY&callback=initMap">
+</script>
+
+<!-- build:js scripts/main.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>

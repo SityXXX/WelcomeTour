@@ -2,94 +2,103 @@
 // Pagination (multiple pages)
 // --------------------------------------------------
 .pagination {
-  display: inline-block;
-  padding-left: 0;
-  margin: $line-height-computed 0;
-  border-radius: $border-radius-base;
 
-  > li {
-    display: inline; // Remove list-style and block-level defaults
-    > a,
-    > span {
-      position: relative;
-      float: left; // Collapse white-space
-      padding: $padding-base-vertical $padding-base-horizontal;
-      line-height: $line-height-base;
-      text-decoration: none;
-      color: $pagination-color;
-      background-color: $pagination-bg;
-      @include gradient-vertical(lighten($pagination-bg ,4%), $pagination-bg);
-      margin: 0 2px;
-      @include border-left-radius($border-radius-large);
-      @include border-right-radius($border-radius-large);
-      box-shadow: 1px 1px 1px #0095b7;
-    }
-    /*
-    &:first-child {
+  text-align: center;
+
+  .pagination-block {
+    display: inline-block;
+    padding-left: 0;
+    margin: $line-height-computed 0;
+    border-radius: $border-radius-base;
+
+    > li {
+      display: inline; // Remove list-style and block-level defaults
       > a,
       > span {
-        margin-left: 0;
-        @include border-left-radius($border-radius-base);
+        position: relative;
+        float: left; // Collapse white-space
+        padding: $padding-base-vertical $padding-base-horizontal;
+        line-height: $line-height-base;
+        text-decoration: none;
+        color: $pagination-color;
+        background-color: $pagination-bg;
+        @include gradient-vertical(lighten($pagination-bg, 4%), $pagination-bg);
+        margin: 0 2px;
+        @include border-left-radius($border-radius-large);
+        @include border-right-radius($border-radius-large);
+        box-shadow: 1px 1px 1px #0095b7;
+      }
+      /*
+      &:first-child {
+        > a,
+        > span {
+          margin-left: 0;
+          @include border-left-radius($border-radius-base);
+        }
+      }
+      &:last-child {
+        > a,
+        > span {
+          @include border-right-radius($border-radius-base);
+        }
+      }*/
+    }
+
+    > li > a,
+    > li > span {
+      &:hover,
+      &:focus {
+        z-index: 2;
+        color: $pagination-hover-color;
+        background-color: $pagination-hover-bg;
+        border-color: $pagination-hover-border;
+        text-decoration: underline;
       }
     }
-    &:last-child {
+
+    > .active > a,
+    > .active > span {
+      &,
+      &:hover,
+      &:focus {
+        z-index: 3;
+        color: $pagination-active-color;
+        background: $pagination-active-bg;
+        border: 1px solid $pagination-active-border;
+        box-shadow: none;
+        cursor: default;
+        text-decoration: none;
+      }
+    }
+
+    > .disabled {
+      > span,
+      > span:hover,
+      > span:focus,
       > a,
-      > span {
-        @include border-right-radius($border-radius-base);
+      > a:hover,
+      > a:focus {
+        color: $pagination-disabled-color;
+        background: $pagination-disabled-bg;
+        border: 1px solid $pagination-disabled-border;
+        cursor: $cursor-disabled;
+        box-shadow: none;
+        text-decoration: none;
       }
-    }*/
-  }
-
-  > li > a,
-  > li > span {
-    &:hover,
-    &:focus {
-      z-index: 2;
-      color: $pagination-hover-color;
-      background-color: $pagination-hover-bg;
-      border-color: $pagination-hover-border;
     }
   }
 
-  > .active > a,
-  > .active > span {
-    &,
-    &:hover,
-    &:focus {
-      z-index: 3;
-      color: $pagination-active-color;
-      background: $pagination-active-bg;
-      border: 1px solid $pagination-active-border;
-      box-shadow: none;
-      cursor: default;
-    }
+  // Sizing
+  // --------------------------------------------------
+
+  // Large
+  .pagination-lg {
+    @include pagination-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $border-radius-large);
   }
 
-  > .disabled {
-    > span,
-    > span:hover,
-    > span:focus,
-    > a,
-    > a:hover,
-    > a:focus {
-      color: $pagination-disabled-color;
-      background: $pagination-disabled-bg;
-      border: 1px solid $pagination-disabled-border;
-      cursor: $cursor-disabled;
-      box-shadow: none
-    }
+  // Small
+  .pagination-sm {
+    @include pagination-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $border-radius-small);
   }
-}
 
-// Sizing
-// --------------------------------------------------
-
-// Large
-.pagination-lg {
-  @include pagination-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $border-radius-large);
-}
-
-// Small
-.pagination-sm {
-  @include pagination-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $border-radius-small);
 }

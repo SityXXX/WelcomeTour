@@ -1,0 +1,43 @@
+.resort {
+
+  &__main-info {
+
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: 2px solid #e7e7e7;
+    @include border-left-radius($border-radius-large);
+    @include border-right-radius($border-radius-large)
+
+  }
+
+  &__description {
+
+    border-bottom: 1px dotted #ababab;
+    padding-bottom: 15px;
+
+  }
+
+  &__main-image {
+
+    overflow: hidden;
+    text-align: center;
+    height: 350px;
+
+  }
+
+  &__service {
+
+    padding-bottom: 20px;
+    border-bottom: 1px dotted #ababab;
+
+  }
+
+  &__service-header {
+
+    font-family: $font-medium;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+  }
+
+}

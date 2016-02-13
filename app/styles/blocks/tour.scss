@@ -23,10 +23,10 @@
 
     .tour__wrap {
 
-        box-shadow: 0 0 12px #333;
-        border-bottom: 2px solid #c8c8c8;
-        position: absolute;
-        z-index: 1;
+      box-shadow: 0 0 12px #333;
+      border-bottom: 2px solid #c8c8c8;
+      position: absolute;
+      z-index: 4;
 
     }
 
@@ -202,13 +202,9 @@
 
     }
 
-    .page--tours & {
+    display: none;
 
-      display: none;
-
-    }
-
-    .page--tours .tour:hover & {
+    .tour:hover & {
 
       display: block;
 

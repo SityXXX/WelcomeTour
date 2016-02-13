@@ -1,0 +1,42 @@
+.page-about {
+
+  background-color: #fff;
+  padding: 25px 0;
+
+  &__wrap {
+
+    border: 2px dashed #e7e7e7;
+    border-radius: 10px;
+    padding: 30px 20px 30px 180px;
+    position: relative;
+
+    &::before {
+
+      content: '';
+      display: block;
+      width: 132px;
+      height: 132px;
+      position: absolute;
+      left: 20px;
+      top: 45px;
+      background: url('../images/info@1x.png') 0 0 no-repeat;
+      background-size: 132px 132px;
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+        background-image: url('../images/info@2x.png');
+
+      }
+
+      .svg & {
+
+        background-image: url('../images/info.svg');
+
+      }
+
+    }
+
+  }
+
+
+}

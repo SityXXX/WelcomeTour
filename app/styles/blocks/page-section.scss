@@ -43,12 +43,6 @@
 
   }
 
-  &--thematic-tours {
-
-
-
-  }
-
   &--steps{
 
     padding: 150px 0;
@@ -67,71 +61,6 @@
   &__wrap {
 
     padding: 50px 0 50px;
-
-  }
-
-  &__header {
-
-    margin: 0 auto 50px auto;
-    max-width: 50%;
-    text-align: center;
-
-    &--light {
-
-      color: #ffffff;
-
-    }
-
-    @media (max-width: $screen-xs-max) {
-
-      max-width: 100%;
-
-    }
-
-  }
-
-  &__heading {
-
-    margin-top: 0;
-    font-size: 40px;
-    text-transform: uppercase;
-
-    @media (max-width: $screen-sm-max) {
-
-      font-size: 32px;
-
-    }
-
-    &::after {
-
-      content: '';
-      display: block;
-      height: 1px;
-      background-color: #fc8929;
-      width: 20%;
-      margin: 10px auto 0 auto;
-
-      @media (max-width: $screen-xs-max) {
-
-        width: 40%;
-
-      }
-
-
-    }
-
-  }
-
-  &__small {
-
-    font-size: 18px;
-    color: #8b8b8b;
-
-    &--light {
-
-      color: #ffffff;
-
-    }
 
   }
 
