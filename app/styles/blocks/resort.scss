@@ -17,11 +17,18 @@
 
   }
 
-  &__main-image {
+  &__main-image-wrap {
 
     overflow: hidden;
     text-align: center;
     height: 350px;
+
+  }
+
+  &__main-image {
+
+    width: 100%;
+    height: auto;
 
   }
 
