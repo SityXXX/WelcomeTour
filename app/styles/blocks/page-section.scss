@@ -1,5 +1,11 @@
 .page-section {
 
+  &__wrap {
+
+    padding: 40px 0 40px;
+
+  }
+
   &__top-dash {
 
     background: url('../images/dash-bg-white@1x.png') 0 0 repeat-x;
@@ -55,12 +61,6 @@
       background-size: 3px 13px;
 
     }
-
-  }
-
-  &__wrap {
-
-    padding: 50px 0 50px;
 
   }
 

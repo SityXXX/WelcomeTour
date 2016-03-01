@@ -3,12 +3,19 @@
   background-color: #fff;
   padding: 25px 0;
 
+  &__heading {
+
+    margin-top: 0;
+
+  }
+
   &__wrap {
 
     border: 2px dashed #e7e7e7;
     border-radius: 10px;
     padding: 30px 20px 30px 180px;
     position: relative;
+    min-height: 180px;
 
     &::before {
 
@@ -18,7 +25,7 @@
       height: 132px;
       position: absolute;
       left: 20px;
-      top: 45px;
+      top: 25px;
       background: url('../images/info@1x.png') 0 0 no-repeat;
       background-size: 132px 132px;
 
@@ -37,6 +44,5 @@
     }
 
   }
-
 
 }

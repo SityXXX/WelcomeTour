@@ -1,19 +1,6 @@
-<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188.7 306">
-  <defs>
-    <style>
-      .cls-1 {
-        opacity: 0.67;
-      }
-
-      .cls-2 {
-        fill: #f7f4f4;
-      }
-    </style>
-  </defs>
-  <title>shevrone-right</title>
-  <g class="cls-1">
-    <g id="chevron-right">
-      <polygon class="cls-2" points="35.7 0 0 35.7 117.3 153 0 270.3 35.7 306 188.7 153 35.7 0"/>
-    </g>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="18px"
+	 viewBox="226.667 0 246.667 400" enable-background="new 226.667 0 246.667 400" xml:space="preserve">
+<polygon fill="#FFFFFF" points="273.333,0 226.667,46.667 380,200 226.667,353.333 273.333,400 473.333,200 "/>
 </svg>

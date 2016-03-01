@@ -4,7 +4,7 @@
 
 // Vars
 @import "config/vars";
-@import "config/inline-greed";
+//@import "config/inline-greed";
 
 
 //
@@ -20,7 +20,8 @@
 @import "blocks/worktime";
 @import "blocks/phone";
 @import "blocks/search";
-@import "blocks/main-menu";
+@import "blocks/menu-main";
+@import "blocks/menu-footer";
 @import "blocks/booking";
 @import "blocks/page-about";
 @import "blocks/content-header";

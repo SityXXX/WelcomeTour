@@ -8,6 +8,8 @@
   border-bottom: 2px solid #c8c8c8;
   border-radius: 5px;
   text-align: left;
+  position: relative;
+  min-height: 1px;
 
   &__wrap {
 
@@ -27,6 +29,7 @@
       border-bottom: 2px solid #c8c8c8;
       position: absolute;
       z-index: 4;
+      width: 100%;
 
     }
 
@@ -172,6 +175,57 @@
   &__stars {
 
     font-size: 0;
+
+  }
+
+  &__stars-img {
+
+    height: 15px;
+    font-size: 0;
+    background: url('../images/star@1x.png') 0 50% repeat-x;
+    background-size: 16px 15px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+      background-image: url('../images/stars@2x.png');
+
+    }
+
+    .svg & {
+
+      background-image: url('../images/star.svg');
+
+    }
+
+    &-1 {
+
+      width: 16px;
+
+    }
+
+    &-2 {
+
+      width: 32px;
+
+    }
+
+    &-3 {
+
+      width: 48px;
+
+    }
+
+    &-4 {
+
+      width: 64px;
+
+    }
+
+    &-5 {
+
+      width: 80px;
+
+    }
 
   }
 

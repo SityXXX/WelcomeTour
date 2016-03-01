@@ -22,17 +22,27 @@
 
     &::after {
 
-      content: '\e080';
-      font-family: 'Glyphicons Halflings';
-      font-style: normal;
-      font-weight: normal;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
+      content: '';
+      background: url(../images/shevrone-right@1x.png) 50% 50% no-repeat;
+      background-size: 11px 18px;
       position: absolute;
+      height: 18px;
+      width: 11px;
       left: 15px;
       top: 50%;
-      margin-top: -7px;
+      margin-top: -9px;
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+        background-image: url('../images/shevrone-right@2x.png');
+
+      }
+
+      .svg & {
+
+        background-image: url('../images/shevrone-right.svg');
+
+      }
 
     }
 
